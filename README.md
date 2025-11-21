@@ -7,10 +7,10 @@ Create a README file that includes notes describing where in the code to find th
 Each note should include the prompt, file name, line number, and change.
 
 ## SUPPLEMENTAL RESOURCES  
-**Task C**
+##Task C## 
 Customize the HTML user interface for your customer’s application. <br>
 The user interface should include the shop name, the product names, and the names of the parts. <br>
-    -mainscreen.html <br>
+    **mainscreen.html**
         -Added customization <br>
             lines 14-37 <br>
         -Added shop name <br>

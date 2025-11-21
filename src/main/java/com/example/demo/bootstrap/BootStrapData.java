@@ -1,5 +1,6 @@
 package com.example.demo.bootstrap;
 
+import com.example.demo.domain.InhousePart;
 import com.example.demo.domain.OutsourcedPart;
 import com.example.demo.domain.Part;
 import com.example.demo.domain.Product;
@@ -72,6 +73,57 @@ public class BootStrapData implements CommandLineRunner {
         System.out.println(productRepository.findAll());
         System.out.println("Number of Parts"+partRepository.count());
         System.out.println(partRepository.findAll());
+
+        //object from parts class
+        if (partRepository.count() == 0) {
+
+            Part p1 = new InhousePart();
+            p1.setName("Wire Mixer");
+            p1.setPrice(29.99);
+            p1.setInv(10);
+            partRepository.save(p1);
+
+            Part p2 = new InhousePart();
+            p2.setName("Coated Flat Beater");
+            p2.setPrice(22.79);
+            p2.setInv(10);
+            partRepository.save(p2);
+
+            Part p3 = new InhousePart();
+            p3.setName("Dough Hook");
+            p3.setPrice(29.99);
+            p3.setInv(10);
+            partRepository.save(p3);
+
+            InhousePart p4 = new InhousePart();
+            p4.setName("Flat Edge Beater");
+            p4.setPrice(29.99);
+            p4.setInv(10);
+            partRepository.save(p4);
+
+            InhousePart p5 = new InhousePart();
+            p5.setName("5-Qt Stainless Steel Mixer");
+            p5.setPrice(69.99);
+            p5.setInv(10);
+            partRepository.save(p5);
+
+        }
+        //object from product class
+        if (productRepository.count() == 0) {
+            Product prod1 = new Product("Stand Mixer", 299.99, 8);
+            Product prod2 = new Product("Blender", 129.99, 15);
+            Product prod3 = new Product("Food Processor", 199.99, 12);
+            Product prod4 = new Product("Hand Mixer", 59.99, 20);
+            Product prod5 = new Product("Coffee Maker", 99.99, 10);
+
+            productRepository.save(prod1);
+            productRepository.save(prod2);
+            productRepository.save(prod3);
+            productRepository.save(prod4);
+            productRepository.save(prod5);
+        }
+
+
 
     }
 }

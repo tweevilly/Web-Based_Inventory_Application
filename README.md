@@ -135,3 +135,4 @@ Add at least two unit tests for the maximum and minimum fields to the PartTest c
 Remove the class files for any unused validators in order to clean your code.
     
     Deleted DeletePartValidator.java - 0 usage
+    Deleted ValidDeletePart.java - corresponding interface of DeletePartValidator.java

@@ -83,30 +83,40 @@ public class BootStrapData implements CommandLineRunner {
             p1.setName("Wire Mixer");
             p1.setPrice(29.99);
             p1.setInv(10);
+            p1.setMinInv(1);
+            p1.setMaxInv(50);
             partRepository.save(p1);
 
             Part p2 = new InhousePart();
             p2.setName("Coated Flat Beater");
             p2.setPrice(22.79);
             p2.setInv(10);
+            p2.setMinInv(1);
+            p2.setMaxInv(50);
             partRepository.save(p2);
 
             Part p3 = new InhousePart();
             p3.setName("Dough Hook");
             p3.setPrice(29.99);
             p3.setInv(10);
+            p3.setMinInv(1);
+            p3.setMaxInv(50);
             partRepository.save(p3);
 
             InhousePart p4 = new InhousePart();
             p4.setName("Flat Edge Beater");
             p4.setPrice(29.99);
             p4.setInv(10);
+            p4.setMinInv(1);
+            p4.setMaxInv(50);
             partRepository.save(p4);
 
             InhousePart p5 = new InhousePart();
             p5.setName("5-Qt Stainless Steel Mixer");
             p5.setPrice(69.99);
             p5.setInv(10);
+            p5.setMinInv(1);
+            p5.setMaxInv(50);
             partRepository.save(p5);
 
         }

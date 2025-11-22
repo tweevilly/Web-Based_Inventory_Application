@@ -114,7 +114,7 @@ Modify the code to enforce that the inventory is between or at the minimum and m
         Added if-statement to enforce inv between min and max
             -Lines 32-39
 ## Task H
-Add validation for between or at the maximum and minimum fields. <br>>
+Add validation for between or at the maximum and minimum fields. <br>
 Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts. <br>
 Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum. <br>
 Display error messages when adding and updating parts if the inventory is greater than the maximum. <br>
@@ -133,3 +133,5 @@ Add at least two unit tests for the maximum and minimum fields to the PartTest c
             -Line 160-176
 ## Task J
 Remove the class files for any unused validators in order to clean your code.
+    
+    Deleted DeletePartValidator.java - 0 usage

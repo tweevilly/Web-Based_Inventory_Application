@@ -1,6 +1,19 @@
-# WESTERN GOVERNORS UNIVERSITY 
-**D287 – JAVA FRAMEWORKS**
-Task 1: Web-Based Spring Inventory Application
+# JAVA FRAMEWORKS D287
+**WESTERN GOVERNORS UNIVERSITY**
+Web-Based Spring Inventory Application
+
+## About
+A web-based inventory management application for a small retail shop, built with Spring Boot, Thymeleaf, and Spring Data JPA (H2 database). It tracks parts and products, letting a user add, update, and delete both, associate parts with products, and purchase products (decrementing inventory). Inventory changes are validated against per-part minimum/maximum thresholds.
+
+## Prerequisites
+- JDK 17
+- Maven 3.6+ installed and available on your PATH
+
+## Running the app
+```
+mvn spring-boot:run
+```
+Then open http://localhost:8080 in a browser.
 
 ## Task B
 Create a README file that includes notes describing where in the code to find the changes you made for each of parts C to J. 
